@@ -1,0 +1,137 @@
+p {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+}
+h3 {
+  margin: 0px;
+}
+</style>
+<style type="text/css">
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.gwd-page {
+
+}
+.gwd-page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gwd-page-content {
+  background-color: transparent;
+  transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-style: preserve-3d;
+  position: absolute;
+}
+.gwd-page-wrapper {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translateZ(0px);
+}
+.gwd-page-size {
+  width: 300px;
+  height: 250px;
+}
+routine-list-main-card {
+  position: absolute;
+  width: 300px;
+  height: 251.333px;
+  left: -1.33333px;
+  top: -1.33333px;
+  background-color: rgb(169, 241, 220);
+  border-radius: 20px;
+}
+.card-div {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 0px;
+  top: 0px;
+  border-radius: 25px;
+  background-image: none;
+  background-color: rgb(169, 241, 220);
+}
+.title {
+  position: absolute;
+  width: 220px;
+  height: 46.6667px;
+  border: 0px;
+  color: rgb(41, 90, 187);
+  top: 0px;
+  left: 10px;
+}
+.exercise {
+  position: absolute;
+  width: 248.667px;
+  height: 40px;
+  background-color: rgb(169, 241, 220);
+  left: 32px;
+  top: 45px;
+}
+.exercise {
+  position: absolute;
+  height: 46.6666px;
+  top: 49px;
+  left: 9px;
+  background-image: none;
+  background-color: rgb(41, 90, 187);
+  border: 0px;
+  border-radius: 40px;
+  width: 280px;
+}
+.new_exercise {
+  position: absolute;
+  background-image: none;
+  background-color: rgb(41, 90, 187);
+  border-radius: 40px;
+  height: 46.6666px;
+  width: 220px;
+  left: 10px;
+  top: 102px;
+}
+.routine-input {
+  position: absolute;
+  height: 20px;
+  left: 37px;
+  top: 59px;
+  width: 200px;
+  background: transparent;
+  border: none;
+}
+.exercise-input {
+  position: absolute;
+  height: 20px;
+  left: 35px;
+  top: 114px;
+  width: 150px;
+  background: transparent;
+  border: none;
+}
+.add-exercise {
+  position: absolute;
+  border-radius: 40px;
+  width: 46.6666px;
+  height: 46.6666px;
+  background-color: rgb(41, 90, 187);
+  top: 101px;
+  left: 243px;
+  border: 0px;
+}
+
+.gwd-lightbox {
+  overflow: hidden;
+}
+
+
+.save-button {
+  padding:5vh;
+
+}

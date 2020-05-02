@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoutineListComponent } from './routine-list.component';
+import { RoutineListComponent } from './routine_list.component';
 
 describe('RoutineListComponent', () => {
   let component: RoutineListComponent;

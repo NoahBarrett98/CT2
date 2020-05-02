@@ -1,0 +1,6 @@
+Dark navy 00034C
+lighter navy 030380
+light navy 295ABB
+light mint A9F1DC
+darker mint 7ED9BC
+dark mint 3FB68E

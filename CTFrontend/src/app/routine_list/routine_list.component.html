@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body style="background-color:transparent;">
+
+<div class="container">
+
+     <div class="jumbotron">
+      <h1 class="display-4">{{RoutineName}}</h1>
+      <p class="lead">{{Description}}</p>
+      <hr class="my-4">
+
+
+
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let item of RoutineList; " class="list-group-item" >
+
+              <!--select class="form-control">
+                <option *ngFor="let item of RoutineList; ">{{item}}</option>
+              </select-->
+
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault03"></label>
+                  <input placeholder="{{item}}" type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault04">Time(s)</label>
+                  <select class="custom-select" id="validationDefault04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault05">Focus Group</label>
+                  <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+          <div class="input-group input-group-lg">
+            <input (keyup.enter)="onKey_Add_Exercise($event)" type="text" placeholder="Add exercise!" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
+          <div class="save-button">
+            <button (click)="saveRoutine()" style="margin-left:70%;" type="button" class="btn btn-outline-secondary">Create Routine</button>
+          </div>
+          <!--div class="accordion" id="accordionExample">
+            <ul *ngFor="let item of RoutineList">
+             <div class="card">
+
+                <div  class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{item}}" aria-expanded="true" aria-controls="collapseOne">
+                      {{item}}
+                    </button>
+                  </h2>
+                </div>
+                <div id="{{item}}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </ul>
+
+
+          <!--div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </button>
+            </h2>
+          </div-->
+
+
+      <!--/div-->
+    </div>
+  </div>
+
+  </body>
+
+</html>
