@@ -1,12 +1,9 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import ProfileSerializer, RoutineSerializer, ExerciseSerializer
-from .models import Profile, Routine, Exercise
+from .serializers import RoutineSerializer, ExerciseSerializer
+from .models import Routine, Exercise
 
 
-class ProfileViewSet(viewsets.ModelViewSet):
-    queryset = Profile.objects.all()
-    serializer_class = ProfileSerializer
 
 class RoutineViewSet(viewsets.ModelViewSet):
     queryset = Routine.objects.all()

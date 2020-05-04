@@ -1,11 +1,7 @@
 from rest_framework import serializers
 
-from .models import Routine, Exercise, Profile
+from .models import Routine, Exercise
 
-class ProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Profile
-        fields = "__all__"
 
 class RoutineSerializer(serializers.ModelSerializer):
     class Meta:

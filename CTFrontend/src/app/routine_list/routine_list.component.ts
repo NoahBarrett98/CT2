@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
+import { RoutineService } from '../routine.service'
 @Component({
   selector: 'app-routine_list',
   templateUrl: './routine_list.component.html',
-  styleUrls: ['./routine_list.component.css']
+  styleUrls: ['./routine_list.component.css'],
+  //add provider
+  providers:[RoutineService]
 })
 export class RoutineListComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private api:RoutineService){
+      this.getRoutines();
+  }
   ngOnInit(): void {
+  }
+  AllRoutines = [{Routine:'Routine'}]
+  //define function lower down
+  getRoutines = () => {
+    //subscribe to observable
+    this.api.getAllRoutines().subscribe(
+      data => {
+          this.AllRoutines = data;
+      },
+      error => {
+        console.log('error');
+      }
+    )
   }
 
   Description = ''
@@ -24,8 +39,9 @@ export class RoutineListComponent implements OnInit {
 
   saveRoutine() {
     //save method for db interaction
-  
+
   }
+
 
 
   /*
