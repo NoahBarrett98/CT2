@@ -1,1 +1,18 @@
-<p>routine works!</p>
+
+
+
+
+<ul *ngFor="let item of AllRoutines" style="list-style-type:none">
+  <li>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action " style="color:#295ABB">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{item.Routine_Name}}</h5>
+          <small>{{item.created_at}}</small>
+        </div>
+        <p class="mb-1">{{item.Description}}</p>
+        <small>{{item.Focus_Group}}</small>
+      </a>
+    </div>
+  </li>
+</ul>
